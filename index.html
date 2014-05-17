@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="directiveTest">
+<head>
+    <title>Directives</title>
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="styles/main.css"> -->
+    <!-- <link rel="icon" type="image/png" href="favicon.gif"> -->
+    <style>
+       rating ul {
+            list-style-type: none;
+            display: inline-block;
+       }
+      rating li {
+            display: inline;
+            color: #A9A9A9;
+      }
+      rating .filled {
+            color: black;
+      }
+    </style>
+</head>
+
+<body>
+    <div>
+        <rating rating-value="3">
+        </rating>
+    </div>
+    <button ng-click="ratingValue=2">Change</button>
+    <!-- <div ng-controller="testController">
+        <expander heading="{{ header }}">
+            {{ innerText }}
+        </expander>
+    </div> -->
+    <script type="text/javascript" src="lib/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-resource.js"></script>
+    <script type="text/javascript" src="lib/angular-route.js"></script>
+    <script type="text/javascript" src="lib/ui-bootstrap-tpls-0.11.0.js"></script>
+    <!-- <script type="text/javascript" src="expander.js"></script> -->
+    <script type="text/javascript" src="rating.js"></script>
+    <!-- <script type="text/javascript" src="scripts/app.js"></script> -->
+
+</body>
+</html>
+
+
